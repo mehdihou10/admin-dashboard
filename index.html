@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize.css  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- all.min.css  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css work  -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">  
+    <title>Admin Dashboard</title>
+
+</head>
+<body>
+
+    <!-- start page -->
+
+    <div class="page c-main">
+
+        <div class="container-xxl">
+            <div class="row">
+
+                <!-- start sidebar  -->
+                <div class="sidebar sticky-top col-lg-3 ps-5 pt-4">
+    
+                    <a href="index.html" class="title w-fit border-bottom border-1 d-flex align-items-center gap-2 pb-3">
+                        <img src="img/logo-ct-dark.png" alt="logo">
+
+                        <span class="c-main fs-15 fw-bold">Soft Ui Dashboard</span>
+
+                    </a>
+
+                    <ul class="text-capitalize list-unstyled my-4">
+                        <li><a href="#" class="active mb-3"><i class="fa-solid fa-house"></i>dashboard</a></li>
+                        <li><a href="#" class="mb-3"><i class="fa-solid fa-clipboard"></i>tables</a></li>
+                        <li><a href="#" class="mb-3"><i class="fa-solid fa-credit-card"></i>billing</a></li>
+                        <li><a href="#" class="mb-3"><i class="fa-solid fa-cube"></i>virtuel reality</a></li>
+                        <li><a href="#" class="text-uppercase"><i class="fa-solid fa-screwdriver-wrench"></i>rtl</a></li>
+
+                    </ul>
+
+                    <div class="documentation text-white p-3 br-20 p-relative ov-h">
+                        <div class="p-relative">
+                            <i class="fa-regular fa-gem c-main fw-bold fs-15"></i>
+                            <span class="d-block fs-17 mt-3 fw-bold">Need help?</span>
+                            <p class="fs-14">Please check our docs</p>
+                            <a href="#" class="text-uppercase text-dark fs-12 bg-white br-10 text-center fw-bold p-2 w-100">documentation</a>
+                       
+                        </div>
+                       
+                    </div>
+
+                </div>
+    
+                <!-- end sidebar  -->
+
+
+                <!-- start content  -->
+
+                <div class="content flex-g pt-4 px-4 col-9">
+                    <div class="head d-flex justify-content-between align-items-center">
+                        <span class="fw-bold fs-5">Dashboard</span>
+
+                        <div class="second d-flex gap-4 gap-md-5 align-items-center">
+                            <div class="input-group d-none d-md-flex">
+                                <span class="input-group-text bg-white">  
+
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                                </span>
+                                <input type="text" placeholder="Type here..." class="form-control border-start-0">
+                            </div>
+
+                            <a href="sign.html" class="sign text-secondary">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="fw-bold fs-15">sign in</span>
+                            </a>
+
+                            <i class="fa-solid fa-gear text-secondary c-pointer"></i>
+
+                            <button class="border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
+                              <i class="fa-solid fa-bars c-main c-pointer fs-18"></i>
+                            </button>
+                            
+
+
+                            <div class="notifications p-relative">
+                                <button type="button" class="position-relative b-transparent border-0" id="notification">
+                                    <i class="fa-solid fa-bell text-secondary"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                      <span></span>
+                                    </span>
+                                  </button>
+
+                                  <div class="notifications-info position-absolute bg-white p-3 br-10 c-pointer user-select-none">
+
+                                    <div class="info p-2 mb-2 br-10 d-flex align-items-start gap-3">
+                                        <img class="image" src="img/team-2.jpg" alt="notification">
+
+                                        <div class="info-content">
+                                            <p class="fs-14 m-0"><span class="c-main fw-bold">New message</span> from Laur</p>
+                                            <p class="fs-14 m-0"><i class="fa-solid fa-clock text-secondary"></i> <span class="text-black-50">13 minutes ago</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="info p-2 mb-2 br-10 d-flex align-items-start gap-3">
+                                        <img class="image" src="img/team-3.jpg" alt="notification">
+
+                                        <div class="info-content">
+                                            <p class="fs-14 m-0"><span class="c-main fw-bold">New message</span> from James</p>
+                                            <p class="fs-14 m-0"><i class="fa-solid fa-clock text-secondary"></i> <span class="text-black-50">1 day ago</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="info p-2 br-10 d-flex align-items-start gap-3">
+                                        <div class="image d-center">
+                                            <i class="fa-solid fa-credit-card text-white"></i>
+                                        </div>
+
+                                        <div class="info-content">
+                                            <p class="fs-14 m-0">Payment successfully completed</p>
+                                            <p class="fs-14 m-0"><i class="fa-solid fa-clock text-secondary"></i> <span class="text-black-50">2 days ago</span></p>
+                                        </div>
+                                    </div>
+
+                                  </div>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+
+                    <div class="activities mt-4">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="info bg-white d-flex justify-content-between align-items-center p-3 br-10">
+                                    <div class="first-part">
+                                        <span class="text-black-50 fs-15 fw-bold">Today's Money</span>
+                                        <div>
+                                            <span class="c-main fw-bold fs-5">$53,000</span> 
+                                            <span class="fs-14 fw-bold win">+55%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="second-part small d-center br-10">
+                                        <i class="fa-solid fa-coins fs-20 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="info bg-white d-flex justify-content-between align-items-center p-3 br-10">
+                                    <div class="first-part">
+                                        <span class="text-black-50 fs-15 fw-bold">Today's Users</span>
+                                        <div>
+                                            <span class="c-main fw-bold fs-5">2,300</span> 
+                                            <span class="fs-14 fw-bold win">+3%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="second-part small d-center br-10">
+                                        <i class="fa-solid fa-cookie-bite fs-20 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="info bg-white d-flex justify-content-between align-items-center p-3 br-10">
+                                    <div class="first-part">
+                                        <span class="text-black-50 fs-15 fw-bold">New Clients</span>
+                                        <div>
+                                            <span class="c-main fw-bold fs-5">+3,462</span> 
+                                            <span class="fs-14 fw-bold lose">-2%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="second-part small d-center br-10">
+                                        <i class="fa-solid fa-users fs-20 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="info bg-white d-flex justify-content-between align-items-center p-3 br-10">
+                                    <div class="first-part">
+                                        <span class="text-black-50 fs-15 fw-bold">Sales</span>
+                                        <div>
+                                            <span class="c-main fw-bold fs-5">$103,430</span> 
+                                            <span class="fs-14 fw-bold win">+5%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="second-part small d-center br-10">
+                                        <i class="fa-solid fa-cart-shopping fs-20 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-12 col-xl-7">
+                                <div class="info d-flex flex-c-mb justify-content-between bg-white p-3 br-10 h-400 h-255">
+                                    <div class="flex-45">
+                                        <span class="d-block text-black-50 fw-bold mb-1">Built by developers</span>
+                                        <span class="d-block fw-bold fs-20">Soft UI Dashboard</span>
+                                        <p class="text-secondary fs-18 lh-lg mt-3 fst-italic">From colors, cards, typography to complex elements, you will find the full documentation.</p>
+                                    
+                                       </div>
+
+                                       <div class="second-part big flex-40 br-10 d-center">
+                                        <img class="rocket img-fluid" src="img/illustrations/rocket-white.png" alt="rocket">
+                                       </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-12 col-xl-5">
+                                <div class="info info-bg bg-white text-white p-3 br-10 h-400 h-255">
+
+                                    <div class="w-100 h-100 p-3 br-10 position-relative ov-h">
+                                        <div class="position-relative">
+                                            <span class="d-block fw-bold fs-20 mb-3">Work with the rockets</span>
+                                        <p class="fs-18">
+                                            Wealth creation is an evolutionarily recent positive-sum game. It is all about who take the opportunity first.
+                                        </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-5">
+                                <div class="info bg-white p-3 br-10 h-410">
+
+                                    <div class="bg-gradient-dark br-10 ov-h py-3 pe-1 mb-3">
+              
+                                    <div class="chart">
+                                            <div class="chart">
+                                            <canvas id="chart-bars" class="chart-canvas" height="170" width="343" style="display: block; box-sizing: border-box; height: 170px; width: 343px;"></canvas>
+                                            <!-- <canvas id="chart-line" class="chart-canvas" height="170" width="343" style="display: block; box-sizing: border-box; height: 170px; width: 343px;"></canvas> -->
+    
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <span class="d-block fw-bold">Active Users</span>
+                                    <p class="text-secondary">(<span class="fs-14 fw-bold">+23%</span>) than last weak</p>
+
+                                    <div class="users-infos d-flex-all mt-3">
+                                        <div class="inf">
+                                          <div class="d-flex gap-2">
+                                            <i class="fa-regular fa-file-lines" style="background-image: linear-gradient(310deg,#7928ca,#ff0080);"></i>
+                                            <span class="fs-14">Users</span>
+                                          </div>
+                                       
+
+                                            <div class="inf-ch">
+                                              <span class="d-block fw-bold fs-20 mb-1">36K</span>
+                                             <div class="progress-stats p-relative rounded-pill">
+                                              <span class="position-absolute rounded-pill" style="width: 70%;"></span>
+                                             </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="inf">
+
+                                          <div class="d-flex gap-2">
+                                            <i class="fa-solid fa-rocket" style="background-image: linear-gradient(310deg,#2152ff,#21d4fd);"></i>
+                                            <span class="fs-14">Clicks</span>
+                                          </div>
+
+                                          
+                                      <div class="inf-ch">
+                                        <span class="d-block fw-bold fs-20 mb-1">2M</span>
+                                       <div class="progress-stats p-relative rounded-pill">
+                                        <span class="position-absolute rounded-pill" style="width: 90%;"></span>
+                                       </div>
+                                      </div>
+                                 
+                                      </div>
+
+                                      <div class="inf">
+
+                                        <div class="d-flex gap-2">
+                                          <i class="fa-regular fa-credit-card" style="background-image: linear-gradient(310deg,#f53939,#fbcf33);"></i>
+                                          <span class="fs-14">Sales</span>
+                                        </div>
+
+                                        <div class="inf-ch">
+                                          <span class="d-block fw-bold fs-20 mb-1">435$</span>
+                                         <div class="progress-stats p-relative rounded-pill">
+                                          <span class="position-absolute rounded-pill" style="width: 30%;"></span>
+                                         </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="inf">
+
+                                      <div class="d-flex gap-2">
+                                        <i class="fa-solid fa-screwdriver-wrench" style="background-image: linear-gradient(310deg,#ea0606,#ff667c);"></i>
+                                        <span class="fs-14">Items</span>
+                                      </div>
+
+                                      <div class="inf-ch">
+                                        <span class="d-block fw-bold fs-20 mb-1">43</span>
+                                       <div class="progress-stats p-relative rounded-pill">
+                                        <span class="position-absolute rounded-pill" style="width: 40%;"></span>
+                                       </div>
+                                      </div>
+                                    
+                                  </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-7">
+                                <div class="info bg-white br-10 p-3 h-410">
+
+                                  <span class="d-block fw-bold mb-2">Sales overview</span>
+                                  <p><i class="fa-solid fa-arrow-up win"></i> <span class="fw-bold fs-14">4% more</span> <span>in <span class="current-year"></span></span></p>
+                                    <div class="chart">
+                                        <canvas id="chart-line" class="chart-canvas" height="300" width="508" style="display: block; box-sizing: border-box; height: 300px; width: 508px;"></canvas>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-xl-8">
+                              <div class="info bg-white br-10 h-480">
+
+                                <div class="projects-head d-flex-all px-3 pt-4">
+
+                                  <div>
+                                    <span class="d-block fw-bold fs-18">Projects</span>
+                                    <p class="text-secondary mt-2 fs-15 flex-ai gap-2"><i class="fa-solid fa-check fs-18" style="color: #21d4fd;"></i> <span class="fw-bold">30 done</span> this month</p>
+                                  
+                                  </div>
+
+                                  <div class="position-relative">
+                                    <i class="fa-solid fa-ellipsis-vertical p-1 select-icon text-secondary fs-5 c-pointer"></i>
+                                    
+                                    <ul class="projects-filter list-unstyled bg-white br-10 p-3 position-absolute">
+
+                                      <li class="py-2 px-3 br-10 c-pointer">All Projects</li>
+                                      <li class="py-2 px-3 br-10 c-pointer" data-cat="best">Best Projects</li>
+                                      <li class="py-2 px-3 br-10 c-pointer" data-cat="average">Average Projects</li>
+
+                                    </ul>
+                                  </div>
+
+                               
+                                </div>
+
+                                <div class="projects-content">
+                                  <table class="projects-table w-100">
+                                    <thead>
+                                      <tr class="text-secondary fs-11 fw-bold">
+                                        <td>COMPANIES</td>
+                                        <td>MEMBERS</td>
+                                        <td>BUDGET</td>
+                                        <td>COMPLETION</td>
+                                      </tr>
+                                    </thead>
+  
+                                    <tbody>
+                                      <tr data-cat="average">
+                                        <td>
+                                          <img src="img/theme/angular.jpg" alt="image">
+                                          <span>Soft Programming Version</span>
+                                        </td>
+  
+                                        <td>
+                                          <div>
+                                            <img src="img/team-2.jpg" alt="person" class="border border-2 border-light">
+                                            <img src="img/team-3.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+                                            <img src="img/team-4.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+                                            <img src="img/ivancik.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+  
+                                          </div>
+                                        </td>
+  
+                                        <td class="fs-13 fw-bold">
+                                          $14,000
+                                        </td>
+  
+                                        <td>
+                                          <span class="d-block fs-12 fw-bold">60%</span>
+                                          <div class="progress-stats position-relative w-100 br-50 mt-2">
+                                            <span class="position-absolute br-50" style="width: 60%; background-image: linear-gradient(310deg,#2152ff,#21d4fd);"></span>
+                                          </div>
+                                        </td>
+                                      </tr>
+  
+                                      <tr data-cat="average">
+                                        <td>
+                                          <img src="img/small-logos/logo-spotify.svg" alt="image">
+                                          <span>Launch our Mobile App</span>
+                                        </td>
+  
+                                        <td>
+                                          <div>
+                                            <img src="img/team-2.jpg" alt="person" class="border border-2 border-light">
+                                            <img src="img/team-4.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+                                          </div>
+                                        </td>
+  
+                                        <td class="fs-13 fw-bold">
+                                          $20,500
+                                        </td>
+  
+                                        <td>
+                                          <span class="d-block fs-12 fw-bold">10%</span>
+                                          <div class="progress-stats position-relative w-100 br-50 mt-2">
+                                            <span class="position-absolute br-50" style="width: 10%; background-image: linear-gradient(310deg,#2152ff,#21d4fd);"></span>
+                                          </div>
+                                        </td>
+                                      </tr>
+  
+                                      <tr data-cat="best">
+                                        <td>
+                                          <img src="img/small-logos/logo-atlassian.svg" alt="image">
+                                          <span>Add Progress Track</span>
+                                        </td>
+  
+                                        <td>
+                                          <div>
+                                            <img src="img/team-4.jpg" alt="person" class="border border-2 border-light">
+                                            <img src="img/team-3.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+                                            <img src="img/ivancik.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+  
+                                          </div>
+                                        </td>
+  
+                                        <td class="fs-13 fw-bold">
+                                          $3,000
+                                        </td>
+  
+                                        <td>
+                                          <span class="d-block fs-12 fw-bold">100%</span>
+                                          <div class="progress-stats position-relative w-100 br-50 mt-2">
+                                            <span class="position-absolute br-50" style="width: 100%; background-image: linear-gradient(310deg,#17ad37,#98ec2d)"></span>
+                                          </div>
+                                        </td>
+                                      </tr>
+  
+                                      <tr data-cat="average">
+                                        <td>
+                                          <img src="img/small-logos/logo-xd.svg" alt="image">
+                                          <span>Soft UI XD Version</span>
+                                        </td>
+  
+                                        <td>
+                                          <div>
+                                            <img src="img/team-2.jpg" alt="person" class="border border-2 border-light">
+                                            <img src="img/team-3.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+                                            <img src="img/team-4.jpg" alt="person" class="border border-2 border-light" style="margin-left: -20px;">
+                                          </div>
+                                        </td>
+  
+                                        <td class="fs-13 fw-bold">
+                                          $10,000
+                                        </td>
+  
+                                        <td>
+                                          <span class="d-block fs-12 fw-bold">25%</span>
+                                          <div class="progress-stats position-relative w-100 br-50 mt-2">
+                                            <span class="position-absolute br-50" style="width: 25%; background-image: linear-gradient(310deg,#2152ff,#21d4fd);"></span>
+                                          </div>
+                                        </td>
+                                      </tr>
+  
+                                      <tr data-cat="best">
+                                        <td>
+                                          <img src="img/small-logos/logo-jira.svg" alt="image">
+                                          <span>Add the New Pricing Page</span>
+                                        </td>
+  
+                                        <td>
+                                          <div>
+                                            <img src="img/ivancik.jpg" alt="person" class="border border-2 border-light">
+  
+                                          </div>
+                                        </td>
+  
+                                        <td class="fs-13 fw-bold">
+                                          $500
+                                        </td>
+  
+                                        <td>
+                                          <span class="d-block fs-12 fw-bold">100%</span>
+                                          <div class="progress-stats position-relative w-100 br-50 mt-2">
+                                            <span class="position-absolute br-50" style="width: 100%; background-image: linear-gradient(310deg,#17ad37,#98ec2d)"></span>
+                                          </div>
+                                        </td>
+                                      </tr>
+  
+                                    </tbody>
+                                  </table>
+                                </div>
+                          
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6 col-xl-4">
+                              <div class="info bg-white p-3 br-10 h-480">
+                                <span class="d-block fw-bold fs-18">Orders overview</span>
+                                <p class="text-secondary mt-2 fs-15 flex-ai gap-2"><i class="fa-solid fa-arrow-up fs-18 win"></i> <span class="fw-bold">24%</span> this month</p>
+                              
+                                <div class="orders-infos mt-4">
+
+                                  <div class="inf flex-ai gap-2">
+                                    <i class="fa-solid fa-bell w-30 text-center" style="color: #17ad37;"></i>
+                                    <div class="text">
+                                      <p class="fs-14 mb-1 fw-bold">$2400, Design changes</p>
+                                      <p class="fs-13 mb-0 text-secondary">22 DEC 7:20 PM</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="line w-30"><span class="d-block"></span></div>
+
+                                  <div class="inf flex-ai gap-2">
+                                    <i class="fa-brands fa-html5 w-30 text-center" style="color: #ea0606;"></i>
+                                    <div class="text">
+                                      <p class="fs-14 mb-1 fw-bold">New order #1832412</p>
+                                      <p class="fs-13 mb-0 text-secondary">21 DEC 11 PM</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="line w-30"><span class="d-block"></span></div>
+
+                                  <div class="inf flex-ai gap-2">
+                                    <i class="fa-solid fa-cart-shopping w-30 text-center" style="color: #7928ca;"></i>
+                                    <div class="text">
+                                      <p class="fs-14 mb-1 fw-bold">Server payments for April</p>
+                                      <p class="fs-13 mb-0 text-secondary">21 DEC 9:34 PM</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="line w-30"><span class="d-block"></span></div>
+
+                                  <div class="inf flex-ai gap-2">
+                                    <i class="fa-solid fa-key w-30 text-center" style="color: #ff0080;"></i>
+                                    <div class="text">
+                                      <p class="fs-14 mb-1 fw-bold">Unlock packages for development</p>
+                                      <p class="fs-13 mb-0 text-secondary">18 DEC 4:54 AM</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="line w-30"><span class="d-block" style="height: 25px;"></span></div>
+
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <footer class="text-center mt-4">
+                      <p>&copy; <span class="current-year"></span> designed by <a href="https://www.creative-tim.com/" target="_blank" class="d-inline fw-bold c-main">Creative tim</a></p>
+                      <p>Coded By <a href="https://x-mehdi.vercel.app" target="_blank" class="d-inline fw-bold c-main">Mehdi Hou</a></p>
+                    </footer>
+
+                </div>
+                <!-- end sidebar  -->
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- offcanvas  -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+      
+        
+      </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/chartjs.min.js"></script>
+    <script src="js/main.js"></script>
+
+     <script>
+    var ctx = document.getElementById("chart-bars").getContext("2d");
+
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: "Sales",
+          tension: 0.4,
+          borderWidth: 0,
+          borderRadius: 4,
+          borderSkipped: false,
+          backgroundColor: "#fff",
+          data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
+          maxBarThickness: 6
+        }, ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 500,
+              beginAtZero: true,
+              padding: 15,
+              font: {
+                size: 14,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+              color: "#fff"
+            },
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false
+            },
+            ticks: {
+              display: false
+            },
+          },
+        },
+      },
+    });
+
+
+    var ctx2 = document.getElementById("chart-line").getContext("2d");
+
+    var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
+    gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
+
+    var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
+    gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+
+    new Chart(ctx2, {
+      type: "line",
+      data: {
+        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+            label: "Mobile apps",
+            tension: 0.4,
+            borderWidth: 0,
+            pointRadius: 0,
+            borderColor: "#cb0c9f",
+            borderWidth: 3,
+            backgroundColor: gradientStroke1,
+            fill: true,
+            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+            maxBarThickness: 6
+
+          },
+          {
+            label: "Websites",
+            tension: 0.4,
+            borderWidth: 0,
+            pointRadius: 0,
+            borderColor: "#3A416F",
+            borderWidth: 3,
+            backgroundColor: gradientStroke2,
+            fill: true,
+            data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+            maxBarThickness: 6
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              padding: 10,
+              color: '#b2b9bf',
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              color: '#b2b9bf',
+              padding: 20,
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
